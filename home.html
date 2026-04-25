@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pune Muincipal Corporation</title>
     <style>
-        #navbar{
-            display: flex;
-            flex-direction: row;
-            align-items: justify;
-            background-color: white;
-            flex-wrap: wrap;
+        body{
+            background-color: wheat;
+            font-weight: 600;
         }
-        #nav-items{
+
+        nav {
+            display: flex;
+            text-decoration: none;
+            background-color: whitesmoke;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #nav-items {
             width: justify;
             height: justify;
             margin: 10px;
-            background-color: beige;
             font-size: 20px;
             text-align: center;
             align-items: center;
         }
-        #logo{
-            align-items: left;
+        #smtg{
+            background-color: whitesmoke;
         }
-        #navbutton{
-            display: flex;
-            flex-direction: row;
-            align-items: right;       
+
+        #navbar {
+            align-items: center;
         }
-        #noticebar{
+
+        #image {
+            align-items: center;
+        }
+
+        #noticebar {
             background-color: blue;
             color: white;
             height: 60px;
@@ -37,41 +50,144 @@
             align-items: center;
             justify-content: center;
         }
+
+        #leftpanel {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #notice {
+            height: 100px;
+            width: 300px;
+
+        }
+
+        #LOWERBOX {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #lowermain {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: justify;
+        }
+
+        #items {
+            margin: 50px;
+
+        }
     </style>
 </head>
+
 <body>
-    <nav id = "navbar">
-            <img id="logo" src="PMC-logo-1_0.png" alt=""height="100px" width="100px">
-            <div id="nav-items">Pune Municipal Corporation</div>
-            <div id="navbutton">
-                <div id="nav-items">Home</div>
-                <div id="nav-items">PMC Services</div>
-                <div id="nav-items">Contact us</div>
-                <div id="nav-items">About</div>
-                <img src="maharashtragov.png" alt="">
-                <img src="indiagov.png" alt="">
-            </div>
+    <h1 align="center">
+        <div id="nav-items"><img id="logo" src="PMC-logo-1_0.png" alt="" height="100px" width="100px">
+            <h1>Pune Municipal Corporation</h1>
+        </div>
+    </h1>
+    <nav id="navbar">
+
+        <a id="smtg"href="home.html">
+            <div id="nav-items">Home</div>
+        </a>
+        <a  id="smtg" href="pmcservices.html">
+            <div id="nav-items">PMC Services</div>
+        </a>
+        <a  id="smtg" href="contact.html">
+            <div id="nav-items">Contact us</div>
+        </a>
+        <a id="smtg" href="about.html">
+            <div id="nav-items">About</div>
+        </a>
     </nav>
+    <hr color="black">
     <img src="Census-Bharat-Banner-old-en.png" alt="">
-        <marquee id="noticebar" behavior="scroll" direction="left">Important notice</marquee>
-    <div>
-        <div></div>
-        <div>
-            <div class="officialsCardWrapper"><div class="officialsCard container-fluid">
-                <div class="row justify-content-center"><div class="col-12 col-md-6">
-                    <div class="officialItem item1"><div class="imageContainer">
-                        <div class="imageWrapper bg-white"><img alt="Shri. Jishnu Dev Varma, Hon. Governor" width="128" height="128" decoding="async" data-nimg="1" class="officialImag" srcset="/governor.png 1x, /governor.png 2x" src="https://www.pmc.gov.in/governor.png" style="color: transparent;"><div class="initialsPlaceholder" style="display: none;">CR</div>
+    <marquee id="noticebar" behavior="scroll" direction="left">Important notice</marquee>
+
+
+    <div id="lowermain">
+        <div id="items">
+            <div>
+                <div>
+                    <div><img alt="Shri. Devendra Fadnavis, Hon. Chief Minister" width="128" height="128"
+                            decoding="async" data-nimg="1" srcset="/governor.png 1x, /governor.png 2x"
+                            src="https://www.pmc.gov.in/governor.png" style="color: transparent;">
+                        <div class="initialsPlaceholder" style="display: none;">DF</div>
                     </div>
                 </div>
-                <div class="officialInfo"><h3 class="officialName">Shri. Jishnu Dev Varma</h3><p class="officialTitle">Hon. Governor</p></div>
+                <div>
+                    <h3>Shri. Jishnu Dev Varma</h3>
+                    <p>Hon. Governor</p>
+                </div>
             </div>
         </div>
-        <div class="col-12 col-md-6"><div class="officialItem item2"
-            <div class="imageContainer"><div class="imageWrapper bg-white"><img alt="Shri. Devendra Fadnavis, Hon. Chief Minister" width="128" height="128" decoding="async" data-nimg="1" class="officialImag" srcset="/chief-minister.png 1x, /chief-minister.png 2x" src="https://www.pmc.gov.in/chief-minister.png" style="color: transparent;"><div class="initialsPlaceholder" style="display: none;">DF</div></div></div><div class="officialInfo"><h3 class="officialName">Shri. Devendra Fadnavis</h3><p class="officialTitle">Hon. Chief Minister</p></div></div></div><div class="col-12 col-md-6"><div class="officialItem item3"><div class="imageContainer"><div class="imageWrapper bg-white"><img alt="Shri. Eknath Shinde, Hon. Deputy Chief Minister" loading="lazy" width="128" height="128" decoding="async" data-nimg="1" class="officialImag" srcset="/deputy-cm-2.png 1x, /deputy-cm-2.png 2x" src="https://www.pmc.gov.in/deputy-cm-2.png" style="color: transparent;"><div class="initialsPlaceholder" style="display: none;">ES</div></div></div><div class="officialInfo"><h3 class="officialName">Shri. Eknath Shinde</h3><p class="officialTitle">Hon. Deputy Chief Minister</p></div></div></div><div class="col-12 col-md-6"><div class="officialItem item4"><div class="imageContainer"><div class="imageWrapper bg-white"><img alt="Smt. Sunetra Pawar, Hon. Deputy Chief Minister" loading="lazy" width="128" height="128" decoding="async" data-nimg="1" class="officialImag" srcset="/sunetra-pawar-new.png 1x, /sunetra-pawar-new.png 2x" src="https://www.pmc.gov.in/sunetra-pawar-new.png" style="color: transparent;"><div class="initialsPlaceholder" style="display: none;">AP</div></div></div><div class="officialInfo"><h3 class="officialName">Smt. Sunetra Pawar</h3><p class="officialTitle">Hon. Deputy Chief Minister</p></div></div></div><div class="col-12 col-md-6"><div class="officialItem item5"><div class="imageContainer"><div class="imageWrapper bg-white"><img alt="Smt. Madhuri Misal, MoS, Urban Development" loading="lazy" width="128" height="128" decoding="async" data-nimg="1" class="officialImag" srcset="/maduri-misal.png 1x, /maduri-misal.png 2x" src="https://www.pmc.gov.in/maduri-misal.png" style="color: transparent;"><div class="initialsPlaceholder" style="display: none;">AP</div></div></div><div class="officialInfo"><h3 class="officialName">Smt. Madhuri Misal</h3><p class="officialTitle">MoS, Urban Development</p></div></div></div></div></div></div>
+        <div id="items">
+            <div>
+                <div>
+                    <div><img alt="Shri. Devendra Fadnavis, Hon. Chief Minister" width="128" height="128"
+                            decoding="async" data-nimg="1" srcset="/chief-minister.png 1x, /chief-minister.png 2x"
+                            src="https://www.pmc.gov.in/chief-minister.png" style="color: transparent;">
+                        <div class="initialsPlaceholder" style="display: none;">DF</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Shri. Devendra Fadnavis</h3>
+                    <p>Hon. Chief Minister</p>
+                </div>
+            </div>
+        </div>
+        <div id="items">
+            <div>
+                <div>
+                    <div><img alt="Shri. Eknath Shinde, Hon. Deputy Chief Minister" loading="lazy" width="128"
+                            height="128" decoding="async" data-nimg="1" class="officialImag"
+                            srcset="/deputy-cm-2.png 1x, /deputy-cm-2.png 2x"
+                            src="https://www.pmc.gov.in/deputy-cm-2.png" style="color: transparent;">
+                        <div style="display: none;">ES</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Shri. Eknath Shinde</h3>
+                    <p>Hon. Deputy Chief Minister</p>
+                </div>
+            </div>
+        </div>
+        <div id="items">
+            <div>
+                <div>
+                    <div><img alt="Smt. Sunetra Pawar, Hon. Deputy Chief Minister" loading="lazy" width="128"
+                            height="128" decoding="async" data-nimg="1" class="officialImag"
+                            srcset="/sunetra-pawar-new.png 1x, /sunetra-pawar-new.png 2x"
+                            src="https://www.pmc.gov.in/sunetra-pawar-new.png" style="color: transparent;">
+                        <div style="display: none;">AP</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Smt. Sunetra Pawar</h3>
+                    <p>Hon. Deputy Chief Minister</p>
+                </div>
+            </div>
+        </div>
+        <div id="items">
+            <div>
+                <div>
+                    <div><img alt="Smt. Madhuri Misal, MoS, Urban Development" loading="lazy" width="128" height="128"
+                            decoding="async" data-nimg="1" srcset="/maduri-misal.png 1x, /maduri-misal.png 2x"
+                            src="https://www.pmc.gov.in/maduri-misal.png" style="color: transparent;">
+                        <div style="display: none;">AP</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Smt. Madhuri Misal</h3>
+                    <p>MoS, Urban Development</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    
-
 </body>
+
 </html>
